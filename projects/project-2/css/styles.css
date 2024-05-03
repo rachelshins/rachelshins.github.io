@@ -1,0 +1,25 @@
+.wrap {
+    max-width:900px;
+    margin:auto;
+ }
+ .zoom {
+    width:100%;
+    max-width:1600px;
+    margin:auto;
+    padding:1em;
+    background:#000000;
+    border-radius:10px;
+    text-align:center;
+ }
+
+.zoom img {
+   display:block;
+   margin:0 0 1em;
+   max-width:100%;
+   height:auto;
+   border-radius:10px;
+   transition:transform 0.5s;
+}
+.zoom img:hover {
+   transform:scale(1.7) ;
+}
