@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image Gallery</title>
+<style>
+    /* Style for grid container */
+    body {
+        background-color: #121212;
+    }
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: 5px;
+        padding: 20px;
+    }
+    /* Style for image */
+    .grid-container img {
+        width: 100%;
+        height: auto;
+        display: block;
+        transition: filter 0.3s ease;
+    }
+    /* Apply blur effect on hover */
+    .grid-container img:hover {
+        filter: blur(5px);
+    }
+    /* Style for title */
+    .title {
+        text-align: center;
+        color: white;
+        font-family: 'CircularXXTrial', sans-serif;
+        font-weight: bold;
+        font-size: 50px;
+        margin-top: 20px;
+        padding: 20px;
+        text-align: left;
+    }
+    /* Style for follow me text */
+    .follow-me {
+        text-align: center;
+        color: white;
+        font-family: 'CircularXXTrial', sans-serif;
+        font-size: 20px;
+        margin-left: 20px;
+        text-align:left
+    }  
+        .follow-me a {
+        color: gray;
+        text-decoration: none;
+    }
+    .follow-me a:hover {
+        text-decoration: underline;
+    }
+    /* Style for overlay text */
+    .image-container {
+        position: relative;
+    }
+    .overlay-text {
+        position: absolute;
+        font-family: 'CircularXXTrial', sans-serif;
+        font-weight: bold;
+        top: calc(50% - 15px); 
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        color: white;
+        font-size: 16px;
+        text-align: center;
+        transition: opacity 1s ease;
+        text-shadow: 0 0 10px black;
+    }
+    /* Show overlay text on hover */
+    .image-container:hover .overlay-text {
+        opacity: 1;
+    }
+</style>
+</head>
+<body>
+
+    <div class="title">My Playlists</div>
+  <div class="follow-me"><a href="https://open.spotify.com/user/rachelshins?si=0bbec6afed2045bc" target="_blank" rel="noopener noreferrer">Follow Me</a></div>
+
+<!-- Grid container -->
+<!-- Grid container -->
+<div class="grid-container">
+    <!-- Image elements -->
+    <div class="image-container">
+        <img src="images/image1.jpg" alt="Image 1">
+        <div class="overlay-text">My rock and alternative rock playlist.</div>
+    </div>
+    <div class="image-container">
+        <img src="images/image2.jpg" alt="Image 2">
+        <div class="overlay-text">My spring playlist for march.</div>
+    </div>
+    <div class="image-container">
+        <img src="images/image3.jpg" alt="Image 3">
+        <div class="overlay-text">A playlist about angels...</div>
+    </div>
+    <div class="image-container">
+        <img src="images/image4.jpg" alt="Image 4">
+        <div class="overlay-text">My all time favorite songs currently.</div>
+    </div>
+    <div class="image-container">
+        <img src="images/image5.jpg" alt="Image 5">
+        <div class="overlay-text">Soft indie playlist... a lot of Faye Webster.</div>
+    </div>
+    <div class="image-container">
+        <img src="images/image6.jpg" alt="Image 6">
+        <div class="overlay-text">A playlist for enfps.</div>
+    </div>
+    <div class="image-container">
+        <img src="images/image7.jpg" alt="Image 7">
+        <div class="overlay-text">My alternative hip hop playlist.</div>
+    </div>
+    <div class="image-container">
+        <img src="images/image8.jpg" alt="Image 8">
+        <div class="overlay-text">My playlist of 2022 favorites.</div>
+    </div>
+    <div class="image-container">
+        <img src="images/image9.jpg" alt="Image 9">
+        <div class="overlay-text">A classical music playlist.</div>
+    </div>
+    <div class="image-container">
+        <img src="images/image10.jpg" alt="Image 10">
+        <div class="overlay-text">My jpop playlist.</div>
+    </div>
+    <div class="image-container">
+        <img src="images/image11.jpg" alt="Image 11">
+        <div class="overlay-text">My playlist from when I was preparing my portfolio.</div>
+    </div>
+    <div class="image-container">
+        <img src="images/image12.jpg" alt="Image 12">
+        <div class="overlay-text">A playlist of love songs...</div>
+    </div>
+    <div class="image-container">
+        <img src="images/image13.jpg" alt="Image 13">
+        <div class="overlay-text">A playlist for Killua and Gon, two chracters from the show Hunter x Hunter.</div>
+    </div>
+</div>
+
+</body>
+</html>
